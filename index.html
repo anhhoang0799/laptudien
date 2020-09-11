@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let english = ["student", "english"];
+        let tiengviet = ["hoc sinh", "tienganh"];
+        let input = prompt("nhap vao tu can tim: ");
+        let index;
+        for (let i = 0; i < english.length; i++) {
+            if (english[i] === input) {
+                index = i;
+                break;
+            } else {
+                index = -1;
+            }
+        }
+        if (index !== -1) {
+            let output = tiengviet[index];
+            document.write(output);
+        } else {
+            alert("khong tim thay ket qua")
+        }
+    </script>
+</body>
+
+</html>
